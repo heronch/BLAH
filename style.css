@@ -1,0 +1,228 @@
+/* base style for the website */
+
+/* Remove default margins and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sizing easier to control */
+}
+
+/* Style the entire page */
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    line-height: 1.6; /* Space between lines of text */
+    color: #333; /* Dark gray text color */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header styling */
+
+/* Style the <header> element */
+header {
+    background-color: #2c3e50; /* Dark blue background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Space inside header (top, right, bottom, left) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow below header */
+}
+
+/* Style the h1 inside header */
+header h1 {
+    font-size: 2.5rem; /* Large font size */
+    margin-bottom: 0.5rem; /* Space below heading */
+}
+
+/* Styling for navigation bar */
+
+/* Style the <nav> element */
+nav {
+    background-color: #3d7fc0; /* Slightly lighter blue */
+    padding: 1rem; /* Space inside nav */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow below nav */
+}
+
+/* Style the <ul> list inside nav */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center the items */
+    gap: 2rem; /* Space between list items */
+}
+
+/* Style each <li> in the nav */
+nav li {
+    display: inline; /* Display in a line */
+}
+
+/* Style the <a> links in nav */
+nav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly larger text */
+    padding: 0.5rem 1rem; /* Space around text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+/* Style links when you hover over them */
+nav a:hover {
+    background-color: #2c3e50; /* Darker blue on hover */
+}
+
+/* Styling of main area*/
+
+/* Style the <main> element */
+main {
+    max-width: 1200px; /* Maximum width */
+    margin: 2rem auto; /* Center the main content, add space top/bottom */
+    padding: 0 1rem; /* Space on left and right */
+}
+
+/* Style all <section> elements */
+section {
+    background-color: white; /* White background */
+    margin-bottom: 2rem; /* Space below each section */
+    padding: 2rem; /* Space inside section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Style h2 headings */
+h2 {
+    color: #2c3e50; /* Dark blue color */
+    margin-bottom: 1rem; /* Space below heading */
+    font-size: 2rem; /* Large font */
+    border-bottom: 3px solid #3498db; /* Blue underline */
+    padding-bottom: 0.5rem; /* Space between text and border */
+}
+
+/* Style paragraphs in sections */
+section p {
+    color: #555; /* Medium gray */
+    font-size: 1.1rem; /* Slightly larger text */
+}
+
+/* Book card styling */
+
+/* Style each <article> element (book card) */
+article {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 1.5rem; /* Space inside card */
+    margin-bottom: 2rem; /* Space below each card */
+    border-radius: 8px; /* Rounded corners */
+    border-left: 5px solid #3498db; /* Blue accent on left side */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation */
+}
+
+/* Make cards lift up when you hover over them */
+article:hover {
+    transform: translateY(-5px); /* Move up 5 pixels */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Larger shadow */
+}
+
+/* Style h3 headings in articles (book titles) */
+article h3 {
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 0.8rem; /* Space below */
+    font-size: 1.5rem; /* Large font */
+}
+
+/* Style paragraphs in articles */
+article p {
+    margin-bottom: 0.5rem; /* Small space below each paragraph */
+    color: #555; /* Medium gray */
+}
+
+/* Make "Author:", "Genre:", etc. stand out */
+article strong {
+    color: #2c3e50; /* Dark blue */
+}
+
+/* General button styling */
+
+/* Style all <button> elements */
+button {
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    padding: 0.7rem 1.5rem; /* Space inside button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Normal font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth color change */
+    margin-top: 1rem; /* Space above button */
+}
+
+/* Button color change on hover */
+button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Button appearance when clicked */
+button:active {
+    transform: scale(0.98); /* Slightly shrink */
+}
+
+/* Search bar styling */
+
+/* Style the <form> element */
+form {
+    display: flex; /* Display items in a row */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Space between form elements */
+}
+
+/* Style <label> elements */
+label {
+    font-weight: bold; /* Make text bold */
+    color: #2c3e50; /* Dark blue */
+    font-size: 1.1rem; /* Slightly larger */
+}
+
+/* Style <input> fields */
+input[type="text"] {
+    padding: 0.8rem; /* Space inside input */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Normal font size */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+/* Change border color when input is focused (clicked) */
+input[type="text"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: #3498db; /* Blue border */
+}
+
+/* Style submit button in forms */
+form button[type="submit"] {
+    align-self: flex-start; /* Align button to the left */
+    margin-top: 0.5rem; /* Small space above */
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+/* Make website look good on mobile phones */
+@media (max-width: 768px) {
+    /* Stack navigation items vertically on small screens */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Make header smaller on mobile */
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    /* Reduce padding on mobile */
+    main {
+        padding: 0 0.5rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+}
